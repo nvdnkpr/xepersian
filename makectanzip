@@ -1,0 +1,20 @@
+#! /bin/sh
+chmod -x img/ireland.jpg img/weather/clouds.jpg img/weather/rain.jpg img/weather/sun.jpg xepersian-logo.pdf xepersian.dtx
+xelatex -shell-escape xepersian.dtx
+xelatex -shell-escape xepersian.dtx
+xelatex -shell-escape xepersian.dtx
+teckit_compile parsidigits.map
+teckit_compile parsidigits.map
+teckit_compile parsidigits.map
+mkdir -p doc/xelatex/xepersian source/xelatex/xepersian tex/xelatex/xepersian fonts/misc/xetex/fontmapping/xepersian
+mkdir xepersian
+mv *.sty *.cls *.def tex/xelatex/xepersian
+mv *.pdf *.tex *.py README img doc/xelatex/xepersian
+mv xepersian.dtx xepersian.ins source/xelatex/xepersian
+mv parsidigits.map parsidigits.tec fonts/misc/xetex/fontmapping/xepersian
+zip -r xepersian-tds doc/xelatex/xepersian source/xelatex/xepersian tex/xelatex/xepersian fonts/misc/xetex/fontmapping/xepersian
+mv xepersian-tds.zip xepersian.tds.zip
+mv doc/xelatex/xepersian/*.pdf doc/xelatex/xepersian/*.py doc/xelatex/xepersian/README doc/xelatex/xepersian/img source/xelatex/xepersian/xepersian.dtx source/xelatex/xepersian/xepersian.ins xepersian
+zip -r xepersian xepersian.tds.zip xepersian
+rm -r doc source tex fonts xepersian
+rm *.idx *.out *.toc *.gls *.ilg *.ind *.glo *.hd *.aux *.log xepersian.tds.zip
