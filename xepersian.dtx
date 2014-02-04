@@ -5,7 +5,7 @@
 %<*readme>
 ____________________
 The XePersian package
-v13.6
+v13.7
 
 XePersian is a package written for XeLaTeX that allows users to typeset
 Persian easily. 
@@ -27,12 +27,12 @@ In doing so, please always explain your issue well enough, always include
 a minimal working example showing the issue, and always choose the appropriate
 label for your query (i.e. if you are reporting any bugs, choose `bug' label). 
 
-Current version release date: 2013/11/15
+Current version release date: 2014/02/05
 ______________
 Vafa Khalighi
 persian-tex@tug.org
 
-Copyright © 2008–2013
+Copyright © 2008–2014
 Distributed under the LaTeX Project Public License
 It may be distributed and/or modified under the LaTeX Project Public License,
 version 1.3c or higher (your choice). The latest version of
@@ -213,7 +213,7 @@ by Vafa Khalighi.
 % Persian for \LaTeX, using {\XeTeX} engine}
 % \author{Vafa Khalighi\\
 %   \url{persian-tex@tug.org}}
-% \date{\today\qquad Version 13.6}
+% \date{\today\qquad Version 13.7}
 %\maketitle
 %\vskip 0pt plus 3fill
 %\fbox{%
@@ -255,9 +255,9 @@ by Vafa Khalighi.
 %* typesetting, using fonts provided in the
 %* distribution.
 %* 
-%* Copyright © 2008–2013 Vafa Khalighi
+%* Copyright © 2008–2014 Vafa Khalighi
 %* 
-%* v13.6, 2013/11/15
+%* v13.7, 2014/02/05
 %* 
 %* License: LaTeX Project Public License, version
 %* 1.3c or higher (your choice)
@@ -2739,7 +2739,7 @@ by Vafa Khalighi.
 %\fi
 % \subsection{\textsf{latex-localise-commands-xepersian.def}}
 %    \begin{macrocode}
-\ProvidesFile{latex-localise-commands-xepersian.def}[2010/07/25 v0.2 Persian localisation of LaTeX2e commands]
+\ProvidesFile{latex-localise-commands-xepersian.def}[2014/02/05 v0.3 Persian localisation of LaTeX2e commands]
 \eqcommand{شمع‌جدول}{@arstrut}
 \eqcommand{فوق}{above}
 \eqcommand{فاصله‌کوتاه‌بالای‌نمایش}{abovedisplayshortskip}
@@ -3046,7 +3046,7 @@ by Vafa Khalighi.
 \eqcommand{پرزافقی}{hfuzz}
 \eqcommand{فاصله‌مخفی}{hideskip}
 \eqcommand{عرض‌پنهان}{hidewidth}
-\eqcommand{خط‌پر}{hline}
+\bidi@csletcs{خط‌پر}{hline}% this is an exception
 \eqcommand{حاشیه‌ا}{hoffset}
 \eqcommand{حفظ‌درج}{holdinginserts}
 \eqcommand{فاصله‌اگرد}{hrboxsep}
@@ -5609,8 +5609,8 @@ U+003E U+003E <> U+00BB ; >> -> RIGHT POINTING GUILLEMET
 % \subsection{\textsf{xepersian.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\xepersianversion{v13.6}
-\def\xepersiandate{2013/11/15}
+\def\xepersianversion{v13.7}
+\def\xepersiandate{2014/02/05}
 \ProvidesPackage{xepersian}[\xepersiandate\space \xepersianversion\space 
 Persian typesetting in XeLaTeX]
 \RequirePackage{fontspec}
